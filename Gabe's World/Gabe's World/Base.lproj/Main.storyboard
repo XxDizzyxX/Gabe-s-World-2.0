@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,30 +15,37 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gabe_s_World" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wkf-jh-TMA">
+                                <rect key="frame" x="0.0" y="1024" width="834" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="play" id="NrL-rx-GUI">
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" id="hnz-jN-Ccc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0jc-SN-4fd"/>
+                                    <barButtonItem style="plain" systemItem="pause" id="kJp-7O-ldW">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="bYi-lg-0Zj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Zt2-CV-BSe"/>
+                                    <barButtonItem title="Restart" style="plain" id="tGP-Ou-K7y">
+                                        <connections>
+                                            <action selector="restart:" destination="BYZ-38-t0r" id="moy-79-7hM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem style="plain" systemItem="play" id="NrL-rx-GUI">
-                            <connections>
-                                <action selector="play:" destination="BYZ-38-t0r" id="hnz-jN-Ccc"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="0jc-SN-4fd"/>
-                        <barButtonItem style="plain" systemItem="pause" id="kJp-7O-ldW">
-                            <connections>
-                                <action selector="pause:" destination="BYZ-38-t0r" id="bYi-lg-0Zj"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Zt2-CV-BSe"/>
-                        <barButtonItem title="Restart" style="plain" id="tGP-Ou-K7y">
-                            <connections>
-                                <action selector="restart:" destination="BYZ-38-t0r" id="moy-79-7hM"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
